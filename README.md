@@ -43,5 +43,5 @@ Install $project by running
 
 Contribute
 ----------
-- Source Code: github.com/$project/$project
+- Source Code: https://github.com/poohramdas/face-application.git
 
