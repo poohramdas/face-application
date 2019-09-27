@@ -1,0 +1,321 @@
+<html>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="functionalities.js">
+<link rel="stylesheet" href="chatStyles.css">
+<title>FACE APP</title>
+
+</html>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 ">
+                <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-message-tab" data-toggle="tab" href="#nav-message" role="tab" aria-controls="nav-message" aria-selected="true">Message</a>
+                        <a class="nav-item nav-link" id="nav-music-tab" data-toggle="tab" href="#nav-music" role="tab" aria-controls="nav-music" aria-selected="false">Music</a>
+                        <a class="nav-item nav-link" id="nav-timer-tab" data-toggle="tab" href="#nav-timer" role="tab" aria-controls="nav-timer" aria-selected="false">Timer</a> </div>
+                </nav>
+                <div class="py-3 px-3 px-sm-0" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-message" role="tabpanel" aria-labelledby="nav-message-tab">
+                        <div class="container-fluid h-100">
+                            <div class="row justify-content-center h-100">
+                                <div class="col-md-4 col-xl-3 chat">
+                                    <div class="card mb-sm-3 mb-md-0 contacts_card">
+                                        <div class="card-header">
+                                            <div class="input-group">
+                                                <input type="text" placeholder="Search..." name="" class="form-control search">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text search_btn"><i class="fas fa-search"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body contacts_body">
+                                            <ui class="contacts">
+                                                <li id="userDetail" class="active">
+                                                    <div class="d-flex bd-highlight">
+                                                        <div class="img_cont">
+                                                            <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img">
+                                                            <span class="online_icon"></span>
+                                                        </div>
+                                                        <div class="user_info">
+                                                            <span>Maryam Naz</span>
+                                                            <p>Maryam is online</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex bd-highlight">
+                                                        <div class="img_cont">
+                                                            <img src="https://2.bp.blogspot.com/-8ytYF7cfPkQ/WkPe1-rtrcI/AAAAAAAAGqU/FGfTDVgkcIwmOTtjLka51vineFBExJuSACLcBGAs/s320/31.jpg" class="rounded-circle user_img">
+                                                            <span class="online_icon offline"></span>
+                                                        </div>
+                                                        <div class="user_info">
+                                                            <span>Sahar Darya</span>
+                                                            <p>Sahar left 7 mins ago</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex bd-highlight">
+                                                        <div class="img_cont">
+                                                            <img src="https://i.pinimg.com/originals/54/6e/6d/546e6d4c6ce4322e6aa3b2f8ca73ac28.jpg" class="rounded-circle user_img">
+                                                            <span class="online_icon"></span>
+                                                        </div>
+                                                        <div class="user_info">
+                                                            <span>Yolduz Rafi</span>
+                                                            <p>Yolduz is online</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex bd-highlight">
+                                                        <div class="img_cont">
+                                                            <img src="http://profilepicturesdp.com/wp-content/uploads/2018/07/sweet-girl-profile-pictures-9.jpg" class="rounded-circle user_img">
+                                                            <span class="online_icon offline"></span>
+                                                        </div>
+                                                        <div class="user_info">
+                                                            <span>Nargis Hawa</span>
+                                                            <p>Nargis left 30 mins ago</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="d-flex bd-highlight">
+                                                        <div class="img_cont">
+                                                            <img src="https://www.freshmorningquotes.com/wp-content/uploads/2015/11/cute-and-beautifull-girls-profile-pictures.jpg" class="rounded-circle user_img">
+                                                            <span class="online_icon offline"></span>
+                                                        </div>
+                                                        <div class="user_info">
+                                                            <span>Khadija Mehr</span>
+                                                            <p>Khadija left 50 mins ago</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ui>
+                                        </div>
+                                        <div class="card-footer"></div>
+                                    </div>
+                                </div>
+                                <div style="display:none;" id="userMessage" class="col-md-8 col-xl-6 chat">
+                                    <div class="card">
+                                        <div class="card-header msg_head">
+                                            <div class="d-flex bd-highlight">
+                                                <div class="img_cont">
+                                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img">
+                                                    <span class="online_icon"></span>
+                                                </div>
+                                                <div class="user_info">
+                                                    <span>Chat with Maryam Naz</span>
+                                                    <p>1767 Messages</p>
+                                                </div>
+                                                <div class="video_cam">
+                                                    <span><i class="fas fa-video"></i></span>
+                                                    <span><i class="fas fa-phone"></i></span>
+                                                </div>
+                                            </div>
+                                            <span id="action_menu_btn"><i class="fas fa-ellipsis-v"></i></span>
+                                            <div class="action_menu">
+                                                <ul>
+                                                    <li><i class="fas fa-user-circle"></i> View profile</li>
+                                                    <li><i class="fas fa-users"></i> Add to close friends</li>
+                                                    <li><i class="fas fa-plus"></i> Add to group</li>
+                                                    <li><i class="fas fa-ban"></i> Block</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-body msg_card_body">
+                                            <div class="d-flex justify-content-start mb-4">
+                                                <div class="img_cont_msg">
+                                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                                </div>
+                                                <div class="msg_cotainer">
+                                                    Hi, how are you samim?
+                                                    <span class="msg_time">8:40 AM, Today</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end mb-4">
+                                                <div class="msg_cotainer_send">
+                                                    Hi Maryam i am good tnx how about you?
+                                                    <span class="msg_time_send">8:55 AM, Today</span>
+                                                </div>
+                                                <div class="img_cont_msg">
+                                                    <img src="Akash.jpg" class="rounded-circle user_img_msg">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-start mb-4">
+                                                <div class="img_cont_msg">
+                                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                                </div>
+                                                <div class="msg_cotainer">
+                                                    I am good too, thank you for your chat template
+                                                    <span class="msg_time">9:00 AM, Today</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end mb-4">
+                                                <div class="msg_cotainer_send">
+                                                    You welcome Maryam
+                                                    <span class="msg_time_send">9:05 AM, Today</span>
+                                                </div>
+                                                <div class="img_cont_msg">
+                                                    <img src="Akash.jpg" class="rounded-circle user_img_msg">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-start mb-4">
+                                                <div class="img_cont_msg">
+                                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                                </div>
+                                                <div class="msg_cotainer">
+                                                    I am looking for your next templates
+                                                    <span class="msg_time">9:07 AM, Today</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end mb-4">
+                                                <div class="msg_cotainer_send">
+                                                    Ok, thank you have a good day
+                                                    <span class="msg_time_send">9:10 AM, Today</span>
+                                                </div>
+                                                <div class="img_cont_msg">
+                                                    <img src="Akash.jpg" class="rounded-circle user_img_msg">
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-start mb-4">
+                                                <div class="img_cont_msg">
+                                                    <img src="https://www.khaama.com/wp-content/uploads/2019/02/Afghan-Singer-Ghawgha-Taban-880x672-880x672.jpg" class="rounded-circle user_img_msg">
+                                                </div>
+                                                <div class="msg_cotainer">
+                                                    Bye, see you
+                                                    <span class="msg_time">9:12 AM, Today</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="input-group">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+                                                </div>
+                                                <textarea name="" class="form-control type_msg" placeholder="Type your message..."></textarea>
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-music" role="tabpanel" aria-labelledby="nav-music-tab">
+                        <center>
+                            <audio src="" controls id="audioPlayer">
+                                Sorry! your browser doesn't support this!!!
+                            </audio>
+                            <br><br>
+                            <a href="#" id="prv" class="previous round">&#8249;</a>
+                            <a href="#" id="nxt" class="next round">&#8250;</a>
+
+                            <!-- <button id="prv">Prv</button>
+                            <button id="nxt">Next</button> -->
+                            <ul hidden id="playlist">
+                                <li class="current-song"><a href="sample.mp3">Track 1</a></li>
+                                <li><a href="test.mp3">Track 2</a></li>
+                                <li><a href="sample.mp3">Track 3</a></li>
+                            </ul>
+                        </center>
+                        <p hidden id="temp">0</p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-timer" role="tabpanel" aria-labelledby="nav-timer-tab">
+                        <div class="container">
+      <h1 class="screen">
+        <span id="minutes">
+          00
+        </span>:<span id="seconds">
+          00
+        </span>:<span id="hundredths">
+          00
+        </span>
+      </h1>
+      <div class="buttons">
+        <button id="start">START</button>
+        <button id="stop">STOP</button>
+        <button id="reset">RESET</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        audioPlayer();
+
+        function audioPlayer() {
+            var currentSong = document.getElementById("temp").textContent;
+            $("#audioPlayer")[0].src = $("#playlist li a")[0];
+            $("#audioPlayer")[0].play();
+            $("#nxt").click(function(e) {
+                if (currentSong == $("#playlist li a").length - 1) {
+                    currentSong = 0;
+                    document.getElementById("temp").textContent = currentSong;
+                    $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+                    $("#audioPlayer")[0].play();
+                } else {
+                    currentSong = document.getElementById("temp").textContent;
+                    currentSong++;
+                    document.getElementById("temp").textContent = currentSong;
+                    $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+                    $("#audioPlayer")[0].play();
+                }
+            });
+
+            $("#prv").click(function(e) {
+                if (currentSong == 0) {
+                    currentSong = 2;
+                    document.getElementById("temp").textContent = currentSong;
+                    $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+                    $("#audioPlayer")[0].play();
+                } else {
+                    currentSong = document.getElementById("temp").textContent;
+                    currentSong--;
+                    document.getElementById("temp").textContent = currentSong;
+                    $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+                    $("#audioPlayer")[0].play();
+                }
+            });
+
+
+            $("#audioPlayer")[0].addEventListener("ended", function() {
+                currentSong++;
+                if (currentSong == $("#playlist li a").length)
+                    currentSong = 0;
+                document.getElementById("temp").textContent = currentSong;
+                $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
+                $("#audioPlayer")[0].play();
+            });
+        }
+    </script>
+    <script>
+        // $('#userDetail').on('click', function() {
+        //     $("div").show();
+        // });
+
+        $("#userDetail").click(function() {
+            $("#userMessage").toggle('show');
+        });
+    </script>
+</body>
